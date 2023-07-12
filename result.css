@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Results</title>
+</head>
+<body>
+  <h1>Student Results</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>Mathematics</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>Science</td>
+        <td>B+</td>
+      </tr>
+      <!-- Add more rows for each student's result -->
+    </tbody>
+  </table>
+</body>
+</html>

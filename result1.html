@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result Checking</title>
+  <style>
+    /* Optional CSS styles for form layout */
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+   <center> 
+  <h1>Result</h1>
+  
+  <form>
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" name="studentName" required>
+    
+    <label for="studentID">Student ID:</label>
+    <input type="text" id="studentID" name="studentID" required>
+    
+    <label for="examCode">Exam Code:</label>
+    <input type="text" id="examCode" name="examCode" required>
+    
+    <button type="submit">Check Result</button>
+  </form>
+  
+  <div id="resultContainer"></div>
+  
+  <script>
+    // JavaScript code to handle form submission and result display
+    const form = document.querySelector('form');
+    const resultContainer = document.getElementById('resultContainer');
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Fetch student result data based on the input values
+      const studentName = document.getElementById('studentName').value;
+      const studentID = document.getElementById('studentID').value;
+      const examCode = document.getElementById('examCode').value;
+      
+      // Here you can perform any necessary checks or query a database to retrieve the result
+      
+      // Display the result
+      resultContainer.innerHTML = `<p>Student: ${studentName}</p>
+                                   <p>Student ID: ${studentID}</p>
+                                   <p>Exam Code: ${examCode}</p>
+                                   <p>Result: A+</p>`; 
+    });
+  </script>
+  </center>
+</body>
+</html>
